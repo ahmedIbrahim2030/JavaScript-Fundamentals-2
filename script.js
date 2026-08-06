@@ -20,7 +20,7 @@ console.log('My name is Ahmed');
 };
     
 //process of calling the function : invoking , running , calling //the function
-
+/*
 logger();
 logger();
 logger();
@@ -44,5 +44,30 @@ console.log(appleOrangeJuice);
 
 const num = Number('23');
 console.log(num);
+
+*/
+
+//ways to write functions
+//function declaration.
+function calcAge1 (birthYear){
+    return  2037 - birthYear;
+};
+
+
+ const age1 = calcAge1(2003);
+console.log(age1);
+
+//function expression
+
+const calcAge2 = function(birthYear) {
+    return 2037 - birthYear;    
+};
+
+
+const age2 = calcAge2(2003);
+
+console.log(age1, age2);
+
+
 
 
