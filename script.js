@@ -157,6 +157,8 @@ console.log(yearsUntillRetirement(1970, "Mike"));
 
 //Arrays
 
+/*
+
 const freind1 = 'Michael';
 
 const friend2 = 'Steven';
@@ -220,5 +222,59 @@ const ages = [
 ];
 
 console.log(ages);
+
+*/
+
+
+const freinds = ["Michael", "Steven", "Peter"];
+
+
+//Add elements
+const newLength = freinds.push("Jay");
+
+
+console.log(freinds);
+
+console.log(newLength);
+
+freinds.unshift('John');
+
+console.log(freinds);
+
+//Remove elements
+
+
+freinds.pop();
+
+const popped = freinds.pop();
+
+console.log(popped);
+
+console.log(freinds);
+
+//remove first elements 
+
+freinds.shift();
+console.log(freinds);
+
+//get index of element
+console.log(freinds.indexOf('Steven'));
+
+console.log(freinds.indexOf("Bob"));
+
+//check if the element is exist
+
+console.log(freinds.includes("Steven"));
+
+console.log(freinds.includes("Bob"));
+
+
+//does not type coertion
+freinds.push(23);
+console.log(freinds.includes("23"));
+
+if (freinds.includes('Steven')) {
+    console.log('You have a freind called Peter');  
+};
 
 
