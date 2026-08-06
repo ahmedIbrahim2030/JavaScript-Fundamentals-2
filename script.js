@@ -123,6 +123,10 @@ console.log(fruitProcessor(2, 3));
 
 */
 
+//Reveiwing Functions
+
+/*
+
 
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
@@ -149,8 +153,72 @@ console.log(yearsUntillRetirement(2003, "Ahmed"));
  
 console.log(yearsUntillRetirement(1970, "Mike"));
 
+*/
+
+//Arrays
+
+const freind1 = 'Michael';
+
+const friend2 = 'Steven';
+
+const freind3 = 'Peter';
+
+const freinds = ['Michael', 'Steven', 'Peter'];
+
+console.log(freinds);
+
+
+console.log(freinds[0]);
+
+console.log(freinds[2]);
+
+console.log(freinds.length);
+
+
+console.log(freinds[freinds.length - 1]);
+
+
+freinds[2] = 'Jay';
+
+console.log(freinds);
+
+//freinds = ['Bob', 'Alice'];
+
+const firstName = 'Ahmed';
+
+const ahmed = ['Ahmed','Ibrahim', 2037 - 2003 , 'teacher',
+    freinds
+];
+console.log(ahmed);
+
+console.log(ahmed.length);
 
 
 
+
+
+
+//Exercise
+
+const calcAge = function (birthYear) {return 2037 - birthYear;        
+};
+
+const years = new Array(1991, 1984, 2008,2020);
+
+const age1 = calcAge(years[0]);
+
+const age2 = calcAge(years[1]);
+
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+
+console.log(ages);
 
 
