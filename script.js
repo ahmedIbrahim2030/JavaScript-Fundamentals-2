@@ -15,10 +15,12 @@ if (hasDriverLicense) {
 //const private = 534;
 */
 
-function logger (){
-console.log('My name is Ahmed');
-};
-    
+//Functions
+
+// function logger (){
+// console.log('My name is Ahmed');
+// };
+
 //process of calling the function : invoking , running , calling //the function
 /*
 logger();
@@ -75,10 +77,9 @@ console.log(age1, age2);
 
 */
 
-
 //Arrow function
 
-
+/*
 const calcAge3 = birthYear=> 2037 - birthYear;
 
 const age3 = calcAge3(2003);
@@ -97,3 +98,22 @@ return `${firstname} retires in ${retirement} years`;
 console.log(yearsUntillRetirement(2003, "Ahmed"));
 
 console.log(yearsUntillRetirement(1980, "BoB"));
+*/
+
+//calling function inside function
+
+function cutFruitPieces (fruit){
+    return fruit * 4;
+}
+
+
+function fruitProcessor(apples, oranges) {
+const applePeices = cutFruitPieces(apples);
+
+const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePeices} peice of apples and ${applePeices} peice of oranges.`;
+  return juice;
+};
+
+console.log(fruitProcessor(2, 3));
