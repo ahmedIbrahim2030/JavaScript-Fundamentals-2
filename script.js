@@ -225,6 +225,7 @@ console.log(ages);
 
 */
 
+/*
 
 const freinds = ["Michael", "Steven", "Peter"];
 
@@ -276,5 +277,28 @@ console.log(freinds.includes("23"));
 if (freinds.includes('Steven')) {
     console.log('You have a freind called Peter');  
 };
+
+*/
+
+//Objects
+
+
+const ahmedArray = [
+    'Ahmed',
+    "ibrahim",
+    2037 - 2003 ,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+
+//creating an object
+const ahmed = {
+firstName : 'Ahmed',
+lastName : 'Ibrahim',
+age : 2037 - 2003,
+freinds : ['Machael','Peter', 'Steven'],
+};
+
 
 
