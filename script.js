@@ -410,6 +410,7 @@ console.log(ahmed.getSummary());
 
 */
 
+/*
 //Iteration : the for loop
 
 
@@ -440,5 +441,88 @@ console.log(`Lifting weights repetition ${rep}`);
 };
 
 
+*/
+
+//Advanced
+
+const types = [];
 
 
+/**
+ * console.log(ahmed[0]);
+ console.log(ahmed[1]);
+ ...
+ console.log(ahmed[4]);
+ ahmed[5] does not exist
+ * 
+ */
+
+
+
+const ahmedArray = [
+  "Ahmed",
+  "ibrahim",
+  2037 - 2003,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true
+];
+
+
+for (let index = 0; index < ahmedArray.length; index++) {
+
+    //Reading from ahmed array
+    console.log(ahmedArray[index], typeof ahmedArray[index]);
+
+   //filling types array
+    // types[index] = typeof ahmedArray[index];
+
+    types.push(typeof ahmedArray[index]);
+};
+
+console.log(types);
+
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for (let index = 0; index < years.length; index++) {
+    ages.push(2037 - years[index]);
+    
+}
+
+console.log(ages);
+
+
+
+//continue and break
+
+
+console.log('---ONLY STRINGS---');
+
+
+for (let index = 0; index < ahmedArray.length; index++) {
+
+    if (typeof ahmedArray[index] !=='string') {
+        continue;
+    }
+
+    //Reading from ahmed array
+    console.log(ahmedArray[index], typeof ahmedArray[index]);
+
+};
+
+
+
+console.log('---BREAK WITH NUMBERS---');
+
+
+for (let index = 0; index < ahmedArray.length; index++) {
+
+    if (typeof ahmedArray[index] ==='number') {
+        break;
+    }
+
+    //Reading from ahmed array
+    console.log(ahmedArray[index], typeof ahmedArray[index]);
+}
