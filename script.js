@@ -47,8 +47,13 @@ console.log(num);
 
 */
 
+/*
+
 //ways to write functions
+
 //function declaration.
+
+
 function calcAge1 (birthYear){
     return  2037 - birthYear;
 };
@@ -68,6 +73,27 @@ const age2 = calcAge2(2003);
 
 console.log(age1, age2);
 
+*/
 
 
+//Arrow function
 
+
+const calcAge3 = birthYear=> 2037 - birthYear;
+
+const age3 = calcAge3(2003);
+
+
+console.log(age3);
+
+
+const yearsUntillRetirement = (birthYear, firstname)=>{
+const age = 2037 - birthYear;
+const retirement = 65 - age;
+//return retirement;
+return `${firstname} retires in ${retirement} years`;
+};
+
+console.log(yearsUntillRetirement(2003, "Ahmed"));
+
+console.log(yearsUntillRetirement(1980, "BoB"));
