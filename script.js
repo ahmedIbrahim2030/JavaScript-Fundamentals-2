@@ -303,6 +303,8 @@ freinds : ['Machael','Peter', 'Steven'],
 
 */
 
+/*
+
 // Dot VS Bracket Notation
 
 const ahmed = {
@@ -351,5 +353,57 @@ console.log(ahmed);
 //'Ahmed has 3 freinds, and his best freind is macheal'
 
 console.log(`${ahmed.firstName} has ${ahmed.freinds.length} friends, and his best freind is ${ahmed.freinds[0]}`);
+
+*/
+
+// Object Methods 
+
+//we used function expression inside objects
+
+// this : is the whole objects 
+
+const ahmed = {
+  firstName: "Ahmed",
+  lastName: "Ibrahim",
+  birthYear:  1991,
+  job: "teacher",
+  freinds: ["Machael", "Peter", "Steven"],
+  hasDriversLicense : true,
+
+
+//   calcAge : function() {
+//     console.log(this);
+    
+//     return 2037 - this.birthYear
+//   }
+calcAge : function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+},
+getSummary :function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${this["job"]} and he ${this.hasDriversLicense ? "he has" : "he don't has"} a driver's license`;
+}
+
+};
+console.log(ahmed.calcAge());
+
+
+console.log(ahmed.age);
+
+console.log(ahmed.age);
+
+console.log(ahmed.age);
+
+
+
+// challenge
+
+// "ahmed is a 46 years old teacher, and he has driver's license "
+
+
+console.log(ahmed.getSummary());
+
+
+
 
 
