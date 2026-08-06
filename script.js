@@ -280,6 +280,7 @@ if (freinds.includes('Steven')) {
 
 */
 
+/*
 //Objects
 
 
@@ -300,5 +301,55 @@ age : 2037 - 2003,
 freinds : ['Machael','Peter', 'Steven'],
 };
 
+*/
+
+// Dot VS Bracket Notation
+
+const ahmed = {
+  firstName: "Ahmed",
+  lastName: "Ibrahim",
+  age: 2037 - 2003,
+  job : 'teacher',
+  freinds: ["Machael", "Peter", "Steven"],
+};
+
+
+console.log(ahmed.lastName);
+
+console.log(ahmed['lastName']);
+
+//Bracket notaion can you using Expressions inside it 
+
+const nameKey = 'Name';
+
+console.log(ahmed['first'+ nameKey]);
+
+console.log(ahmed["last" + nameKey]);
+
+// console.log(ahmed.'last' + nameKey);
+
+
+const interestedIn = prompt("What do you want to know about Ahmed ? choose between firstName, lastName, age , job, and friends");
+
+//ahmed.interestedIn ==> undefined why ? because ahmed object don't have an property called interestedIn
+
+console.log(ahmed[interestedIn]);
+
+
+if (ahmed[interestedIn]) {
+    console.log(ahmed[interestedIn]);
+    
+}else console.log(
+  "Wrong request! choose between firstName, lastName, age , job, and friends",
+);
+
+ahmed.location = "Egypt";
+ahmed['twitter'] = '@ahmedIbrahim';
+console.log(ahmed);
+
+//Challenge
+//'Ahmed has 3 freinds, and his best freind is macheal'
+
+console.log(`${ahmed.firstName} has ${ahmed.freinds.length} friends, and his best freind is ${ahmed.freinds[0]}`);
 
 
